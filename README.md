@@ -93,6 +93,7 @@ ok，规则明白了，那怎么实现呢？
 
 #### 2、定位解决方案
 思考一下有两个垂直排列的块，如何调整其位置，使其符合两栏布局。
+<div align=center><img src="./two-column-layout/img/position.png" width=400></div>
 > 1、侧边栏设绝对定位，使其脱离正常文档流;content正常排布，调整缩进
 
     .side {
@@ -120,10 +121,11 @@ ok，规则明白了，那怎么实现呢？
 具体布局策略为，将父元素设为flex布局，内部子元素将成为容器成员，按照主轴依次排列。
 > 1、确定flex容器
 
+    // css
     #root {
         display: flex;
     }
-
+    // html
     <div id="root">
         <div class="side">side</div>
         <div class="content">content</div>
@@ -150,11 +152,13 @@ flex-basis： 表示项目原本占据的空间。默认为auto，可以设置�
 grid布局更为简单，只需要划定格子大小，子元素一一自动填充到格子即可。
 > 确定grid容器, 设置 **1*2** 的网格，第一个格子放side，设置第一列为side宽度，第二列自动填充即可。只需一行代码即可实现双栏布局~
 
+    // css
     #root {
         display: grid;
         grid-template-column: 80px auto;
     }
 
+    // html
     <div id="root">
         <div class="side">side</div>
         <div class="content">content</div>
