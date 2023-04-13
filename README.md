@@ -36,7 +36,7 @@ ok，规则明白了，那怎么实现呢？
     }
 
 看看效果,emm,好像没毛病啊。诶不对，content的宽度怎么从最左侧开始算呢？
-<div align=center><img src="./two-column-layout/img/pre.jpg" width=400></div> 
+<div align=center><img src="./two-column-layout/img/pre.jpg" width=500></div> 
 
 > 这里就涉及到 ***层叠上下文*** 的事了。
 在css层叠顺序中，块级元素 < 浮动元素 < 行内元素。具体来讲就是，虽然div块会无视浮动元素的存在，但是块内的行内元素，如文字这些是不会忽视浮动元素的，也即常见的**文字环绕**效果。
