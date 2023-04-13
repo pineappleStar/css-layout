@@ -1,0 +1,16 @@
+#root {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.square {
+    background-color: burlywood;
+    /* setting height: width = 2:1 */
+    /* height: 0; */
+    /* padding-bottom: 200%; */
+}
