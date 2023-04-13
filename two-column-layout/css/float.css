@@ -1,0 +1,27 @@
+.side {
+    float: left;
+    width: 80px;
+}
+
+.content {
+    /* margin缩进 */
+    margin-left: 80px;
+
+    /* BFC */
+    /* 调整定位方式 */
+    /* position: absolute;
+    left: 80px;
+    right: 0; */
+
+    /* 设置overflow */
+    /* overflow: hidden; */
+
+    /* 修改盒模型 */
+    /* box-sizing: border-box;
+    width: 100%;
+    padding-left: 80px; */
+
+    /* 手动计算width */
+    /* display: inline-block;
+    width: calc(100% - 80px); */
+}

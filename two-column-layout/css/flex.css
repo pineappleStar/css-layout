@@ -1,0 +1,9 @@
+#root {
+    display: flex;
+}
+.side {
+    width: 80px;
+}
+.content {
+    flex: 1;
+}

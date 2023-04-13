@@ -1,0 +1,16 @@
+.side {
+    width: 80px;
+
+    /* side定位 */
+    /* position: absolute; */
+}
+.content {
+    /* side定位 */
+    /* margin-left: 80px; */
+
+    /* content定位 */
+    position: absolute;
+    left: 80px;
+    top: 0;
+    right: 0;
+}
